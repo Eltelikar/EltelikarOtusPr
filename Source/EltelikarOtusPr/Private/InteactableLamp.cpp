@@ -39,6 +39,7 @@ AInteactableLamp::AInteactableLamp()
 	Light = CreateDefaultSubobject<UPointLightComponent>(TEXT("Light"));
 	Light->SetupAttachment(LampMesh);
 	Light->SetRelativeLocation(FVector(50.0f, 5.0f, 0.0f));
+	Light->SetLightColor(FLinearColor(0.4f, 0.09f, 0.0f, 1.0f));
 
 	FireParticles = CreateDefaultSubobject<UParticleSystemComponent>(TEXT("FireParticles"));
 	FireParticles->SetupAttachment(LampMesh);
