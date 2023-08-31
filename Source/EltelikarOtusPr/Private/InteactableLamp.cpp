@@ -32,7 +32,7 @@ AInteactableLamp::AInteactableLamp()
 	LampMesh->SetupAttachment(OverlapSphere);
 	LampMesh->SetCollisionEnabled(ECollisionEnabled::QueryOnly);
 	static ConstructorHelpers::FObjectFinder<UStaticMesh>
-	LampMeshAsset(TEXT("/Script/Engine.StaticMesh'/Game/Weapon_Pack/Mesh/Props/Interior/SM_Wall_Torch1.SM_Wall_Torch1'"));
+	LampMeshAsset(TEXT("/Game/Weapon_Pack/Mesh/Props/Interior/SM_Wall_Torch1.SM_Wall_Torch1"));
 	LampMesh->SetStaticMesh(LampMeshAsset.Object);
 	
 
